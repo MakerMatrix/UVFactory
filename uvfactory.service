@@ -1,0 +1,13 @@
+[Unit]
+Description=UVFactory MSLA image server
+After=network.target
+#After=klipper.target
+
+[Service]
+ExecStart=/home/pi/uvfactory.py
+Restart=always
+WorkingDirectory=/home/pi
+User=root
+Group=video
+#Environment=SDL_VIDEODRIVER=directfb
+#Environment=SDL_FBDEV=/dev/fb0
